@@ -1,0 +1,57 @@
+{
+  "name": "artery-vs-code-extension",
+  "displayName": "Artery",
+  "description": "Connect VS Code AI agents to Artery for API testing",
+  "version": "0.1.0",
+  "publisher": "ProdArtery",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "AI",
+    "Other"
+  ],
+  "keywords": [
+    "artery",
+    "api",
+    "mcp",
+    "ai",
+    "testing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ProdArtery/artery-vs-code-extension.git"
+  },
+  "license": "MIT",
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "mcpServerDefinitionProviders": [
+      {
+        "id": "artery",
+        "label": "Artery"
+      }
+    ],
+    "commands": [
+      {
+        "command": "artery.showStatus",
+        "title": "Artery: Show Connection Status"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "esbuild src/extension.ts --bundle --outfile=out/extension.js --external:vscode --platform=node --format=cjs",
+    "watch": "npm run build -- --watch",
+    "build:binary": "cd ../artery-core && GOOS=darwin GOARCH=arm64 go build -ldflags=\"-s -w\" -o /tmp/artery-core-arm64 . && GOOS=darwin GOARCH=amd64 go build -ldflags=\"-s -w\" -o /tmp/artery-core-amd64 . && lipo -create -output ../artery-vs-code-extension/bin/artery-core /tmp/artery-core-arm64 /tmp/artery-core-amd64",
+    "vscode:prepublish": "npm run build -- --minify"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/vscode": "^1.99.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.0.0"
+  },
+  "icon": "icon.png"
+}

@@ -65,7 +65,7 @@ function checkHealth(): Promise<boolean> {
 }
 
 class ArteryMcpProvider implements vscode.McpServerDefinitionProvider, vscode.Disposable {
-    private _running = false;
+    private _running = true;
     private _emitter = new vscode.EventEmitter<void>();
 
     readonly onDidChangeMcpServerDefinitions = this._emitter.event;

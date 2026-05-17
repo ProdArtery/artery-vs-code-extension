@@ -52,5 +52,6 @@
     "@types/vscode": "^1.99.0",
     "esbuild": "^0.25.0",
     "typescript": "^5.0.0"
-  }
+  },
+  "icon": "ARTERY_OFFICIAL_ICON.png"
 }

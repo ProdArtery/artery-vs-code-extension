@@ -1,8 +1,8 @@
 <h1 align="center">Your APIs. Handled For You.</h1>
 
 <p align="center">
-  Artery is an AI-powered API workflow tool built for macOS — with Docker, snapshots, and more.<br/>
-  This extension connects your VS Code AI agent directly to Artery, so it can create collections, send requests, read responses, and manage environments — all without leaving your editor.
+  Artery is an AI-powered API workflow tool built for macOS with Docker, snapshots, and more.<br/>
+  This extension connects your VS Code AI agent directly to Artery, so it can create collections, send requests, read responses, and manage environments. All without leaving your editor.
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@ Click the MCP icon in the Artery toolbar. When it turns **green**, the AI server
 
 **3. Install this extension in VS Code**
 
-That's it — your AI agent now has access to your Artery workspace.
+That's it, your AI agent now has access to your Artery workspace.
 
 ---
 

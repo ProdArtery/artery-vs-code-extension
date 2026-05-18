@@ -15,12 +15,12 @@
 
 **1. Open the Artery app**
 
-**2. Turn on the AI server**
+**2. Turn on the MCP Agentic Server**
 
-Click the MCP icon in the Artery toolbar. When it turns **green**, the AI server is on and ready.
+Click the MCP icon in the Artery toolbar. When it turns **green**, the MCP Agentic Server is on and ready.
 
 <p align="center">
-  <img src="images/ai-server-on.png" width="320" alt="Artery AI server turned on — green icon" />
+  <img src="images/ai-server-on.png" width="320" alt="Artery MCP Agentic Server turned on — green icon" />
 </p>
 
 > Red means off. Green means on.

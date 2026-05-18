@@ -2,7 +2,7 @@
   "name": "artery-vs-code-extension",
   "displayName": "Artery",
   "description": "Connect VS Code AI agents to Artery for API testing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "ProdArtery",
   "engines": {
     "vscode": "^1.99.0"
